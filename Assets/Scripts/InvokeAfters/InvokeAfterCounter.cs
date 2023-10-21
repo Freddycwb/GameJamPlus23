@@ -10,7 +10,7 @@ public class InvokeAfterCounter : InvokeAfter
 
     public void IncreaseValue(int value)
     {
-        currentValue -= value;
+        currentValue += value;
         CallSubAction();
         if (currentValue >= maxValue)
         {
