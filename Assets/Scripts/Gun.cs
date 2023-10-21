@@ -22,14 +22,7 @@ public class Gun : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0,0,angle);
 
-        if (transform.position.x > mousePos.x)
-        {
-            sprite.flipY = true;
-        }
-        else
-        {
-            sprite.flipY = false;
-        }
+        sprite.flipY = transform.position.x > mousePos.x;
 
         if (input.fireDown && currentDelayTime <= 0)
         {
