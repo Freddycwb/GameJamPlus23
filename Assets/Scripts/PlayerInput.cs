@@ -14,15 +14,15 @@ public class PlayerInput : MonoBehaviour, IInput
 		}
 	}
 
-	public bool fireDown
-	{
-        get
-        {
-            return Input.GetMouseButtonDown(0);
-        }
-        set
-        {
-            fireDown = value;
-        }
-    }
+	public bool fireDown {
+		get {
+			return Input.GetMouseButtonDown(0);
+		}
+	}
+
+	public bool interactDown {
+		get {
+			return Input.GetKeyDown(KeyCode.E);
+		}
+	}
 }

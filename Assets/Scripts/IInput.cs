@@ -6,5 +6,6 @@ public interface IInput
 {
 	Vector2 direction { get; set; }
 
-	bool fireDown { get; set; }
+	bool fireDown { get; }
+	bool interactDown { get; }
 }

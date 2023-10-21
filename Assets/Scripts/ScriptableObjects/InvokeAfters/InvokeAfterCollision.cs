@@ -11,7 +11,7 @@ public class InvokeAfterCollision : InvokeAfter
     {
         if (tag == "" || tag == collision.gameObject.tag)
         {
-	        lastCollision = collision.gameObject;
+		lastCollision = collision.gameObject;
             CallAction();
         }
     }
