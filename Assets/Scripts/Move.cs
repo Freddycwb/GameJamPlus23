@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Move : MonoBehaviour
 {
 	private IInput _input;
+	private Rigidbody2D _rb;
 
 	[SerializeField] private float _maxVelocity;
 	[SerializeField] private float _acceleration;
