@@ -47,11 +47,16 @@ public class InvokeAfter : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    protected virtual void Disable()
     {
         if (destroyAfterAction)
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDisable()
+    {
+        Disable();
     }
 }

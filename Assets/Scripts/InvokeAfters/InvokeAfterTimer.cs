@@ -5,7 +5,7 @@ using UnityEngine;
 public class InvokeAfterTimer : InvokeAfter
 {
     public float timeToAction;
-    public bool desableAfterAction = true;
+    public bool loop;
 
     private void OnEnable()
     {
@@ -16,9 +16,19 @@ public class InvokeAfterTimer : InvokeAfter
     {
         yield return new WaitForSeconds(timeToAction);
         CallAction();
-        if (desableAfterAction)
+        if (loop)
+        {
+            StartCoroutine("Count");
+        }
+        else
         {
             enabled = false;
         }
+    }
+
+    protected override void Disable()
+    {
+        StopCoroutine("Count");
+        base.Disable();
     }
 }
