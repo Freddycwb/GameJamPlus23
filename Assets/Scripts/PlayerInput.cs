@@ -13,4 +13,16 @@ public class PlayerInput : MonoBehaviour, IInput
 			direction = value;
 		}
 	}
+
+	public bool fireDown
+	{
+        get
+        {
+            return Input.GetMouseButtonDown(0);
+        }
+        set
+        {
+            fireDown = value;
+        }
+    }
 }
