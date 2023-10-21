@@ -6,7 +6,7 @@ public class InvokeAfterCollision : InvokeAfter
 {
     public string tag = "";
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (tag == "" || tag == collision.gameObject.tag)
         {
@@ -14,7 +14,7 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (tag == "" || tag == collision.gameObject.tag)
         {
@@ -22,7 +22,7 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (tag == "" || tag == other.gameObject.tag)
         {
@@ -30,7 +30,7 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (tag == "" || tag == other.gameObject.tag)
         {
