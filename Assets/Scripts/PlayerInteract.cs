@@ -19,17 +19,19 @@ public class PlayerInteract : MonoBehaviour
 
 	private void Update() {
 		if (_input.interactDown && lastCollision != null) {
-			Collect();
+			Collect(lastCollision.GetComponent<Lootable>());
 		}
 	}
 
-	private void Collect() {
-		Lootable lootable = lastCollision.GetComponent<Lootable>();
-		Debug.Log(lootable.type);
-		Debug.Log(lootable.quantity);
+	private void Collect(Lootable lootable) {
+		if (lootable.collected) return;
+
 		int typeInt = (int)(lootable.type) - 1;
 		if (typeInt >= 0 && typeInt < materials.Count) {
 			materials[typeInt].Value += lootable.quantity;
+			lootable.collected = true;
+		} else {
+			Debug.LogError($"loot type enum of {lastCollision.name} is not in the list of type enums");
 		}
 	}
 }

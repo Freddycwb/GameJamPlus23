@@ -6,4 +6,11 @@ using UnityEngine;
 public class IntVariable : ScriptableObject
 {
 	public float Value;
+
+	[Tooltip("If true, Value will be reset on awake")]
+	public bool isVolatile;
+
+	private void OnEnable() {
+		if (isVolatile) Value = 0;
+	}
 }

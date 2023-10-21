@@ -6,4 +6,5 @@ public class Lootable : MonoBehaviour
 {
 	public LootType type;
 	public int quantity;
+	public bool collected = false;
 }
