@@ -6,7 +6,12 @@ using UnityEngine.Events;
 public class InvokeAfter : MonoBehaviour
 {
     public UnityEvent action;
+    public GameObject[] instantiateAfterAction;
+
     public UnityEvent subAction;
+    public GameObject[] instantiateAfterSubAction;
+
+    public bool destroyAfterAction;
 
     public void CallAction()
     {
@@ -14,6 +19,7 @@ public class InvokeAfter : MonoBehaviour
         {
             action.Invoke();
         }
+        InstantiateAfterAction();
     }
 
     public void CallSubAction()
@@ -21,6 +27,31 @@ public class InvokeAfter : MonoBehaviour
         if (subAction != null)
         {
             subAction.Invoke();
+        }
+        InstantiateAfterSubAction();
+    }
+
+    public void InstantiateAfterAction()
+    {
+        foreach (GameObject obj in instantiateAfterAction)
+        {
+            Instantiate(obj, transform.position, transform.rotation);
+        }
+    }
+
+    public void InstantiateAfterSubAction()
+    {
+        foreach (GameObject obj in instantiateAfterSubAction)
+        {
+            Instantiate(obj, transform.position, transform.rotation);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (destroyAfterAction)
+        {
+            Destroy(gameObject);
         }
     }
 }
