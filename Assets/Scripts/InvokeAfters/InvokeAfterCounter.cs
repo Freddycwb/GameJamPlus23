@@ -8,9 +8,14 @@ public class InvokeAfterCounter : InvokeAfter
     public int currentValue;
     public int minValue;
 
-    private void Start()
+    public void IncreaseValue(int value)
     {
-        currentValue = maxValue;
+        currentValue -= value;
+        CallSubAction();
+        if (currentValue >= maxValue)
+        {
+            CallAction();
+        }
     }
 
     public void DecreaseValue(int value)
