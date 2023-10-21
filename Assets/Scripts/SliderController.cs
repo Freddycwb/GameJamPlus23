@@ -9,12 +9,9 @@ public class SliderController : MonoBehaviour
     public float increaseValue;
     
 
-    void Update()
+    public void IncreaseValue()
     {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            slider.value += increaseValue;
-            slider.value = Mathf.Clamp(slider.value, slider.minValue, slider.maxValue);
-        }
+        slider.value += increaseValue;
+        slider.value = Mathf.Clamp(slider.value, slider.minValue, slider.maxValue);
     }
 }
