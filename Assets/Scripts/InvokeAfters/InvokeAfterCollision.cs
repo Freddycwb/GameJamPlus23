@@ -5,11 +5,13 @@ using UnityEngine;
 public class InvokeAfterCollision : InvokeAfter
 {
     public string tag = "";
+    public GameObject lastCollision;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (tag == "" || tag == collision.gameObject.tag)
         {
+	    lastCollision = collision.gameObject;
             CallAction();
         }
     }
@@ -18,6 +20,7 @@ public class InvokeAfterCollision : InvokeAfter
     {
         if (tag == "" || tag == collision.gameObject.tag)
         {
+	    lastCollision = collision.gameObject;
             CallSubAction();
         }
     }
@@ -26,6 +29,7 @@ public class InvokeAfterCollision : InvokeAfter
     {
         if (tag == "" || tag == other.gameObject.tag)
         {
+	    lastCollision = collision.gameObject;
             CallAction();
         }
     }
@@ -34,6 +38,7 @@ public class InvokeAfterCollision : InvokeAfter
     {
         if (tag == "" || tag == other.gameObject.tag)
         {
+	    lastCollision = collision.gameObject;
             CallSubAction();
         }
     }
