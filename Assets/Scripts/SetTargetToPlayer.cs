@@ -1,18 +1,16 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SetTargetToPlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObjectVariable player;
+    private AIDestinationSetter destiny;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        destiny = GetComponent<AIDestinationSetter>();
+        destiny.target = player.Value.transform;
     }
 }

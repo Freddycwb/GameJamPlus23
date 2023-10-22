@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class IntVariable : ScriptableObject
 {
-	public float Value;
+	public int Value;
 
 	[Tooltip("If true, Value will be reset on awake and on application quit")]
 	public bool isVolatile;
