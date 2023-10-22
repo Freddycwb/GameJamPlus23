@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 272120284310462999}
   - component: {fileID: 6757339997522491482}
   - component: {fileID: 3977033161217707581}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Collision
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -191,7 +191,8 @@ GameObject:
   - component: {fileID: 8797445318870911301}
   - component: {fileID: 4750114542058020969}
   - component: {fileID: 5856325419274810761}
-  m_Layer: 0
+  - component: {fileID: 3068557816232019133}
+  m_Layer: 12
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,6 +374,34 @@ MonoBehaviour:
       m_Calls: []
   instantiateAfterSubAction: []
   destroyAfterAction: 1
+--- !u!114 &3068557816232019133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387684119124808298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb97c36a3732d8568dfd037bb756280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 18d79788048b5ec4f89ced1f5ea8b8a4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5856325419274810761}
+        m_TargetAssemblyTypeName: InvokeAfter, Assembly-CSharp
+        m_MethodName: CallAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5988255596990354065
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +612,7 @@ GameObject:
   - component: {fileID: 9214682698460196463}
   - component: {fileID: 1525624948036122430}
   - component: {fileID: 6212104038223320074}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -689,7 +718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5954746029771025900}
   - component: {fileID: 1948601734942355092}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: AttackCollision
   m_TagString: EnemyDamage
   m_Icon: {fileID: 0}
@@ -755,7 +784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4442717467328360925}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}

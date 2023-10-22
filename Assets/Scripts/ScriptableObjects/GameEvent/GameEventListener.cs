@@ -16,7 +16,7 @@ public class GameEventListener : MonoBehaviour
 		Event.Listen(this);
 	}
 
-	private void OnDisable() {
+	private void OnDestroy() {
 		Event.StopListening(this);
 	}
 }

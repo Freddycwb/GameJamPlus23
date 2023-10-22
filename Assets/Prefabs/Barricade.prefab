@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3964501264951365638}
   - component: {fileID: 6660752044626319692}
   - component: {fileID: -8673317810169409798}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Barricade
   m_TagString: Player
   m_Icon: {fileID: 0}
