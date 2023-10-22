@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 439421554915119742}
   - component: {fileID: 8277349735854430559}
   - component: {fileID: 8109980861146452626}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 4439046888836176737}
   - component: {fileID: 5014144084574440865}
   - component: {fileID: 9011950372191687885}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4390026806973159155}
   - component: {fileID: 8794133227094667779}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 4170219751448090974}
   - component: {fileID: 1149153951409599156}
   - component: {fileID: 4772400801971462994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ MonoBehaviour:
   bullet: {fileID: 6753082945916595956, guid: 2bad0031f0a738347999358f86393785, type: 3}
   spawnPoint: {fileID: 8060834787861072196}
   input: {fileID: 4660610092174778009}
-  delayTime: 0.1
+  delayTime: 1
   sprite: {fileID: 8794133227094667779}
   shotAction:
     m_PersistentCalls:
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 8144372834633020187}
   - component: {fileID: 3785059791182563642}
   - component: {fileID: 78628105490671690}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CanvasPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 4660610092174778009}
   - component: {fileID: 6526995225659562418}
   - component: {fileID: 3457878288754534156}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 5471063538242008051}
   - component: {fileID: 6279036090691854941}
   - component: {fileID: 8909640487665273842}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6340541649919837561}
   - component: {fileID: 3953225982869477463}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Vision Cone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   - component: {fileID: 4490634515545189962}
   - component: {fileID: 7805442481610848248}
   - component: {fileID: 831457761370778995}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collision
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1125,7 +1125,7 @@ GameObject:
   - component: {fileID: 3647391115062816666}
   - component: {fileID: 9016784516315130430}
   - component: {fileID: 6700848540792755908}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: House3Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 755174165632766198}
   - component: {fileID: 6092149333556753752}
   - component: {fileID: 5492307165485494613}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1193731756397017281}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1423,7 @@ GameObject:
   - component: {fileID: 860232528823703339}
   - component: {fileID: 8236521849395230674}
   - component: {fileID: 2580515588501480092}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: House1Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1556,7 +1556,7 @@ GameObject:
   - component: {fileID: 6281862143655744200}
   - component: {fileID: 5617588488604541732}
   - component: {fileID: 3408528763708822698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: House2Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +1686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7398452528643123252}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TrapPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1702,7 +1702,7 @@ Transform:
   m_GameObject: {fileID: 8844326637302468151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.75, z: 0}
+  m_LocalPosition: {x: 0, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1718,7 +1718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5272079333839745327}
   - component: {fileID: 4666477459314149806}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprite Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}

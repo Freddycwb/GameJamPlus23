@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead8809ee1ef6a248818dffe6ae67648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: {fileID: 0}
+  area: {fileID: 1611595940938219618}
   counter: {fileID: 8817473860203372032}
   refTime: 0
   startTimeToCheck: 0.5
