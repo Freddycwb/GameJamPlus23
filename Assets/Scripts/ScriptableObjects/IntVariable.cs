@@ -6,15 +6,16 @@ using UnityEngine;
 public class IntVariable : ScriptableObject
 {
 	public int Value;
+	public int defaultValue;
 
 	[Tooltip("If true, Value will be reset on awake and on application quit")]
 	public bool isVolatile;
 
 	private void OnEnable() {
-		if (isVolatile) Value = 0;
+		if (isVolatile) Value = defaultValue;
 	}
 
 	private void OnApplicationQuit() {
-		if (isVolatile) Value = 0;
+		if (isVolatile) Value = defaultValue;
 	}
 }
