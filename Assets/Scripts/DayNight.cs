@@ -9,7 +9,7 @@ public class DayNight : MonoBehaviour
     public GameObject enemy;
     public GameObject[] enemySpawners;
 
-    public InvokeAfterTimer afterTime;
+    public InvokeAfterTimer nightTimer;
 
     public void IncreaseNight()
     {
@@ -18,14 +18,17 @@ public class DayNight : MonoBehaviour
 
     public void StartWave()
     {
+        Debug.Log("Comecou onda");
         StartCoroutine("Wave");
     }
 
     private IEnumerator Wave()
     {
+        Debug.Log("Vai entrar no for");
         for (int i = 0; i < nightNumber + 1; i++)
         {
-            yield return new WaitForSeconds(afterTime.timeToAction / nightNumber + 2);
+            Debug.Log("entrou no for e esta em " + i);
+            yield return new WaitForSeconds(nightTimer.timeToAction / nightNumber + 2);
             int spawnN = Random.Range(0, enemySpawners.Length);
             Instantiate(enemy, enemySpawners[spawnN].transform.position, transform.rotation);
         }
