@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Fertilizer
   m_EditorClassIdentifier: 
   Value: 0
+  isVolatile: 1
