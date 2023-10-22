@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8647436174555137099}
   - component: {fileID: 4251905792183955213}
   - component: {fileID: 3427454352878882998}
-  - component: {fileID: 2768764373020628928}
   m_Layer: 0
   m_Name: LootableDrawer
   m_TagString: Untagged
@@ -132,21 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1.7}
   m_EdgeRadius: 0
---- !u!114 &2768764373020628928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3210431809149772397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47809fce5727638849d2d8680fe002fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  quantity: 0
-  collected: 0
 --- !u!1 &3531669953999623786
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5997304281236791559}
   - component: {fileID: 6070437068017121458}
+  - component: {fileID: 301917579223279985}
   m_Layer: 7
   m_Name: Interactable
   m_TagString: Untagged
@@ -224,3 +209,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1.7}
   m_EdgeRadius: 0
+--- !u!114 &301917579223279985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531669953999623786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47809fce5727638849d2d8680fe002fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: {fileID: 0}
+  quantityRange: {x: 1, y: 2}

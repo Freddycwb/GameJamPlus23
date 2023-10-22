@@ -8,10 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 301917579223279985, guid: 0272e2ef632865e09a0b791a9265b8b4, type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 11400000, guid: fd0ca8637ee5fa877994457193cf8ef1, type: 2}
     - target: {fileID: 2768764373020628928, guid: 0272e2ef632865e09a0b791a9265b8b4, type: 3}
       propertyPath: type
-      value: 3
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: fd0ca8637ee5fa877994457193cf8ef1, type: 2}
     - target: {fileID: 3210431809149772397, guid: 0272e2ef632865e09a0b791a9265b8b4, type: 3}
       propertyPath: m_Name
       value: FertilizerDrawer Variant
