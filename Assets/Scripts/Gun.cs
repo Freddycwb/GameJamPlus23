@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Gun : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Gun : MonoBehaviour
 
     public SpriteRenderer sprite;
 
+    public UnityEvent shotAction;
+
+
     private void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
@@ -28,6 +32,7 @@ public class Gun : MonoBehaviour
         {
             Instantiate(bullet, spawnPoint.transform.position, transform.rotation);
             currentDelayTime = delayTime;
+            shotAction.Invoke();
         }
         else if(currentDelayTime > 0) 
         {
