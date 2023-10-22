@@ -11,5 +11,6 @@ public class Map : MonoBehaviour
     public void Teleport(Transform position)
     {
         player.position = position.position;
+        Debug.Log("moveu");
     }
 }
