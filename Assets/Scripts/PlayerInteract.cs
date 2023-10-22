@@ -24,12 +24,12 @@ public class PlayerInteract : MonoBehaviour
 	}
 
 	private void Collect(Lootable lootable) {
-		if (lootable.collected) return;
+		if (!lootable.enabled) return;
 
 		int typeInt = (int)(lootable.type) - 1;
 		if (typeInt >= 0 && typeInt < materials.Count) {
 			materials[typeInt].Value += lootable.quantity;
-			lootable.collected = true;
+			lootable.enabled = false;
 		} else {
 			Debug.LogError($"loot type enum of {lastCollision.name} is not in the list of type enums");
 		}
