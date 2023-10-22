@@ -15,8 +15,8 @@ TagManager:
   - InteractArea
   - Interactable
   - Obstacle
-  - 
-  - 
+  - EnemySensor
+  - Bullet
   - 
   - 
   - 
