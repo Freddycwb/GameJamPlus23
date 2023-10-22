@@ -15,6 +15,8 @@ public class Lootable : MonoBehaviour, IInteractable
 	[SerializeField] private Vector2 quantityRange;
 	private int quantity;
 
+	public UnityEvent LootEvent;
+
 	private void OnEnable() {
 		quantity = Random.Range((int)quantityRange.x, (int)quantityRange.y + 1);
 	}
@@ -22,5 +24,6 @@ public class Lootable : MonoBehaviour, IInteractable
 	public void Interact() {
 		type.Value += quantity;
 		enabled = false;
+		LootEvent?.Invoke();
 	}
 }
