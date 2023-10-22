@@ -794,6 +794,7 @@ GameObject:
   - component: {fileID: 4660268961052605700}
   - component: {fileID: 5471063538242008051}
   - component: {fileID: 6279036090691854941}
+  - component: {fileID: 8909640487665273842}
   m_Layer: 0
   m_Name: Anim
   m_TagString: Untagged
@@ -904,6 +905,28 @@ MonoBehaviour:
   input: {fileID: 4660610092174778009}
   anim: {fileID: 5471063538242008051}
   sprite: {fileID: 0}
+--- !u!114 &8909640487665273842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843544372759579696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e5a234a760b6240a7740c9d0a0b2ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls: []
+  instantiateAfterAction:
+  - {fileID: 6386560440928799680, guid: 9e60c63cd3878f042a77feb4847334af, type: 3}
+  subAction:
+    m_PersistentCalls:
+      m_Calls: []
+  instantiateAfterSubAction: []
+  destroyAfterAction: 0
 --- !u!1 &6305834133311775758
 GameObject:
   m_ObjectHideFlags: 0
