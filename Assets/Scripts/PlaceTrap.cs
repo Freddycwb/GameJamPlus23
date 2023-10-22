@@ -9,12 +9,10 @@ public class PlaceTrap : MonoBehaviour, IInteractable
 	}
 
 	[SerializeField] private GameObject _trapPrefab;
-	[SerializeField] private GameObject _playerGun;
 	[SerializeField] private Transform _placePosition;
 
 	public void Interact() {
 		Instantiate(_trapPrefab, _placePosition.position, Quaternion.identity);
-		_playerGun.SetActive(true);
 		gameObject.SetActive(false);
 	}
 }

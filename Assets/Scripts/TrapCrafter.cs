@@ -11,14 +11,12 @@ public class TrapCrafter : MonoBehaviour, IInteractable
 	[SerializeField] private IntVariable _material;
 	[SerializeField] private int _price;
 
-	[SerializeField] private GameObject _playerGun;
 	[SerializeField] private GameObject _playerTrap;
 
 	public void Interact() {
 		if (_material.Value < _price) return;
 		_material.Value -= _price;
 
-		_playerGun.SetActive(false);
 		_playerTrap.SetActive(true);
 	}
 }
