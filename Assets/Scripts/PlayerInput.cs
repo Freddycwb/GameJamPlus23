@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour, IInput
 {
-	public Vector2 direction {
+	public GameObjectVariable player;
+
+    private void Start()
+    {
+		player.Value = gameObject;
+    }
+
+    public Vector2 direction {
 		get {
 			Vector2 move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 			return move.normalized;

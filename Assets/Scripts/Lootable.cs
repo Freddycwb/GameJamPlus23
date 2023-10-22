@@ -8,7 +8,7 @@ public class Lootable : MonoBehaviour
 
 	[Tooltip("Randomizes the quantity between x and y")]
 	public Vector2 quantityRange;
-	[HideInInspector] public float quantity;
+	[HideInInspector] public int quantity;
 
 	private void OnEnable() {
 		quantity = Random.Range((int)quantityRange.x, (int)quantityRange.y + 1);
