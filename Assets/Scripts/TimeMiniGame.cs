@@ -5,24 +5,27 @@ using UnityEngine.UI;
 
 public class TimeMiniGame : MonoBehaviour
 {
+	[SerializeField] private Transform area;
+
     public InvokeAfterCounter counter;
 
     public float refTime;
-    public float startTimeToCheck;  
+    public float startTimeToCheck;
     public float endTimeToCheck;
-    public float delayToFinish;
     public GameObject circle;
 
     public float miniGameTime;
     public Vector3 startPos;
     public Vector3 endPos;
-    private bool isTiming;            
-    private float targetTime;         
+    private bool isTiming;
+    private float targetTime;
 
-    void Start()
+    void OnEnable()
     {
         isTiming = true;
-        SetTiming();  
+        SetTiming();
+	area.position = (startTimeToCheck+endTimeToCheck)/2 * (endPos-startPos) + startPos;
+	area.localScale = new Vector2((endTimeToCheck - startTimeToCheck) * (endPos.x - startPos.x), area.localScale.y);
     }
 
     void Update()
