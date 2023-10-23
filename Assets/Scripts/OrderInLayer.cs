@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class OrderInLayer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private SpriteRenderer render;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        render = GetComponent<SpriteRenderer>();
+        render.sortingOrder = Mathf.FloorToInt(transform.position.y * -100);
     }
 }
