@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f1e26696cbe94b19e4817b1809bc81, type: 3}
   m_Name: TimeLeft
   m_EditorClassIdentifier: 
-  Value: 22
-  defaultValue: 30
+  Value: 17
+  defaultValue: 37
   isVolatile: 1

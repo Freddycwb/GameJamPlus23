@@ -201,5 +201,5 @@ MonoBehaviour:
       m_Calls: []
   instantiateAfterSubAction: []
   destroyAfterAction: 0
-  tag: Damage
+  tag: EenDamage
   lastCollision: {fileID: 0}
