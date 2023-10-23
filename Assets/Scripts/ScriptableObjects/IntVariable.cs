@@ -18,4 +18,12 @@ public class IntVariable : ScriptableObject
 	private void OnApplicationQuit() {
 		if (isVolatile) Value = defaultValue;
 	}
+
+	public void SetValue(int newValue) {
+		Value = newValue;
+	}
+
+	public void DecreaseValue() {
+		Value--;
+	}
 }

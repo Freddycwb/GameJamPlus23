@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Tutorial : MonoBehaviour
 {
@@ -19,15 +20,22 @@ public class Tutorial : MonoBehaviour
 
 	private bool plantInteracted = false;
 
+	[SerializeField] private TextMeshPro text;
+	public Vector3 offset;
+
 	private void Start() {
 		arrow.target = door;
 		arrow.gameObject.SetActive(true);
+		text.text = "It's Daytime, Go Outside";
+		text.transform.position = arrow.target.position + offset;
 	}
 
 	public void OnDoorReached(int houseNumber) {
 		if (!enteredNeighbour) {
 			arrow.target = loot[houseNumber];
 			enteredNeighbour = true;
+			text.text = "Gather Resources\nE to Interact";
+			text.transform.position = arrow.target.position + offset;
 		}
 	}
 
@@ -36,6 +44,7 @@ public class Tutorial : MonoBehaviour
 			startedEvent.Raise();
 			arrow.gameObject.SetActive(false);
 			started = true;
+			text.text = "";
 		}
 	}
 
@@ -44,6 +53,8 @@ public class Tutorial : MonoBehaviour
 			arrow.target = plant;
 			arrow.gameObject.SetActive(true);
 			nightStarted = true;
+			text.text = "Take Care of it\nThey Want to Destroy it";
+			text.transform.position = arrow.target.position + offset;
 		}
 	}
 
@@ -51,6 +62,7 @@ public class Tutorial : MonoBehaviour
 		if (enteredNeighbour && started && nightStarted && !plantInteracted) {
 			arrow.gameObject.SetActive(false);
 			plantInteracted = true;
+			text.text = "";
 		}
 	}
 }
