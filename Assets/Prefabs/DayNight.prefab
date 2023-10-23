@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 588171829585313614}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.3, y: 42.9, z: 0}
+  m_LocalPosition: {x: 198.9, y: 100.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -200,7 +200,7 @@ Transform:
   m_GameObject: {fileID: 2434489108662339405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 69.9, z: 0}
+  m_LocalPosition: {x: 20.6, y: 198.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 7887209562332480085}
   - component: {fileID: 8133339353865861141}
   - component: {fileID: 9096859838312201116}
+  - component: {fileID: 5929780803784181553}
   m_Layer: 0
   m_Name: Day
   m_TagString: Untagged
@@ -359,7 +360,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5026623075482530762}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85402f217526600468cc73c5d3c53b17, type: 3}
   m_Name: 
@@ -385,7 +386,7 @@ MonoBehaviour:
       m_Calls: []
   instantiateAfterSubAction: []
   destroyAfterAction: 0
-  timeToAction: 5
+  timeToAction: 30
   loop: 0
 --- !u!114 &9096859838312201116
 MonoBehaviour:
@@ -400,6 +401,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 18d79788048b5ec4f89ced1f5ea8b8a4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8133339353865861141}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &5929780803784181553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026623075482530762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb97c36a3732d8568dfd037bb756280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c427b30fecb1b8459a38f6b94c703184, type: 2}
   Response:
     m_PersistentCalls:
       m_Calls:
@@ -481,7 +510,7 @@ MonoBehaviour:
       m_Calls: []
   instantiateAfterSubAction: []
   destroyAfterAction: 0
-  timeToAction: 5
+  timeToAction: 30
   loop: 0
 --- !u!114 &5263217422979449066
 MonoBehaviour:
@@ -536,7 +565,7 @@ Transform:
   m_GameObject: {fileID: 6876389557847769700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.8, y: 38.1, z: 0}
+  m_LocalPosition: {x: -201.4, y: 99.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

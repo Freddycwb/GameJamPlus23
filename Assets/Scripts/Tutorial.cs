@@ -23,6 +23,8 @@ public class Tutorial : MonoBehaviour
 	[SerializeField] private TextMeshPro text;
 	public Vector3 offset;
 
+	[SerializeField] private GameObject timerText;
+
 	private void Start() {
 		arrow.target = door;
 		arrow.gameObject.SetActive(true);
@@ -45,6 +47,7 @@ public class Tutorial : MonoBehaviour
 			arrow.gameObject.SetActive(false);
 			started = true;
 			text.text = "";
+			timerText.SetActive(true);
 		}
 	}
 
@@ -55,6 +58,7 @@ public class Tutorial : MonoBehaviour
 			nightStarted = true;
 			text.text = "Take Care of it\nThey Want to Destroy it";
 			text.transform.position = arrow.target.position + offset;
+			timerText.SetActive(false);
 		}
 	}
 
