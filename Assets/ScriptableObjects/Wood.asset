@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f1e26696cbe94b19e4817b1809bc81, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  Value: 1
-  defaultValue: 5
+  Value: 7
+  defaultValue: 2
   isVolatile: 1

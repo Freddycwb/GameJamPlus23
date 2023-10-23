@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37312585, g: 0.3807451, b: 0.358728, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayLight: {r: 1, g: 0.8666667, b: 0.76862746, a: 1}
-  dayDark: {r: 0.6, g: 0.50980395, b: 0.4627451, a: 1}
+  dayDark: {r: 0.6, g: 0.50980395, b: 0.4627451, a: 0.54509807}
   nightLight: {r: 0.15294118, g: 0.15294118, b: 0.26666668, a: 1}
   nightDark: {r: 0.09803922, g: 0.09803922, b: 0.16862746, a: 1}
   darkness: {fileID: 204236010}
@@ -2117,6 +2117,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 488013410}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &488013414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,6 +2152,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 0ba6f0e1d04ab5201add239b3ddd7020, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 488013410}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2378,9 +2402,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2743895788966377229, guid: 9ebf02fea2bd256b6b049fb3145c1273, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3920768500995778892, guid: 9ebf02fea2bd256b6b049fb3145c1273, type: 3}
       propertyPath: m_Name
       value: CircleMiniGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743270960570143447, guid: 9ebf02fea2bd256b6b049fb3145c1273, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5784001173020645230, guid: 9ebf02fea2bd256b6b049fb3145c1273, type: 3}
       propertyPath: m_MaxValue
@@ -3524,6 +3556,11 @@ MonoBehaviour:
   destroyAfterAction: 0
   tag: Player
   lastCollision: {fileID: 0}
+--- !u!1 &820703042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3808468384074614924, guid: d3c197a412df2b972b59a9d45d6d13f2, type: 3}
+  m_PrefabInstance: {fileID: 2056481712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &823281609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,6 +4790,10 @@ PrefabInstance:
       propertyPath: _minigame
       value: 
       objectReference: {fileID: 7331706}
+    - target: {fileID: 4007262081058611411, guid: 6d3dc30231ef78109b8792bbd678106e, type: 3}
+      propertyPath: _playerGun
+      value: 
+      objectReference: {fileID: 820703042}
     - target: {fileID: 4007262081058611411, guid: 6d3dc30231ef78109b8792bbd678106e, type: 3}
       propertyPath: _playerMove
       value: 
