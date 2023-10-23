@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class Lootable : MonoBehaviour, IInteractable
 {
+	public ChangeColorSprite cco;
+	public InvokeAfterCollision iac;
+
 	public bool canInteract {
 		get { return enabled; }
 		set { canInteract = value; }
@@ -24,7 +27,11 @@ public class Lootable : MonoBehaviour, IInteractable
 
 	public void Interact() {
 		type.Value += quantity;
-		enabled = false;
+		cco.Normal();
+		cco.Darken();
+		cco.enabled = false;
+		Destroy(iac);
 		LootEvent?.Invoke();
+		enabled = false;
 	}
 }

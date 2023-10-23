@@ -11,6 +11,7 @@ public class Generator : MonoBehaviour
 	[SerializeField] private GameObject _startArea;
 	[SerializeField] private GameObject _leaveArea;
 	[SerializeField] private Move _playerMove;
+	[SerializeField] private GameObject _playerGun;
 
 	public void OnMinigameCorrect() {
 		type.Value -= price;
@@ -23,6 +24,7 @@ public class Generator : MonoBehaviour
 		_minigame.SetActive(false);
 		_startArea.SetActive(true);
 		_playerMove.enabled = true;
+		_playerGun.SetActive(true);
 		_leaveArea.SetActive(false);
 	}
 
@@ -30,6 +32,7 @@ public class Generator : MonoBehaviour
 		_minigame.SetActive(true);
 		_leaveArea.SetActive(true);
 		_playerMove.enabled = false;
+		_playerGun.SetActive(false);
 		_startArea.SetActive(false);
 	}
 }
