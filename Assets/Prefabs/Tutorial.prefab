@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1850782979098177321}
   - component: {fileID: 1727878198342643217}
+  - component: {fileID: 311945686308396987}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Untagged
@@ -47,7 +48,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrow: {fileID: 5619569175652085082}
   door: {fileID: 0}
+  loot:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   startedEvent: {fileID: 11400000, guid: c427b30fecb1b8459a38f6b94c703184, type: 2}
+  plant: {fileID: 0}
+--- !u!114 &311945686308396987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173019810460604447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb97c36a3732d8568dfd037bb756280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 0f8259f6758279b4a95d1020edf84457, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1727878198342643217}
+        m_TargetAssemblyTypeName: Tutorial, Assembly-CSharp
+        m_MethodName: OnDayIsOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4514448867135249219
 GameObject:
   m_ObjectHideFlags: 0
